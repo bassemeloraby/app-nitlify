@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Fragment } from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          breaking changes
-          change the file name in github
-        </a>
-      </header>
+    <Fragment>
+    <div className='container'>
+    <Navbar/>
+    <section className="row">
+    <div className='col-3 '>
+    <Sidebar/>
     </div>
+    <div className='col'>
+    <Main/>
+    </div>
+    </section>
+    <Footer/>
+    </div>
+    </Fragment>
   );
 }
 
