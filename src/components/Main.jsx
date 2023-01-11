@@ -1,44 +1,23 @@
 import React from 'react';
-
+import companies from '../data';
 const Main = () => {
-  const companies = [
-    {
-      id: 1,
-      name: 'I Care',
-      logo: 'https://i-care.globemedsaudi.com:8036/images/icarelogo.png',
-      URL: 'https://i-care.globemedsaudi.com:8036/',
-      tel: '05600255527',
-    },
-    {
-      id: 2,
-      name: 'Bupa',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Bupa_Arabia_logo.jpg',
-      URL: 'https://www.bupa.com.sa/',
-      tel: '8002440307',
-    },
-    {
-      id: 3,
-      name: 'I Care',
-      logo: 'https://i-care.globemedsaudi.com:8034/images/icarelogo.gif',
-      URL: 'https://i-care.globemedsaudi.com:8034/',
-      tel: '05600254427',
-    },
-  ];
+  
   return (
-    <section>
+    <section className="row">
       {companies.map((company) => (
-        <div className="container m-2">
+        <div className="container m-2 col">
           <a href={company.URL} rel="noreferrer" target="_bSlank">
             <img
               src={company.logo}
               alt="I Care"
               className="img-thumbnail"
-              width={'150px'}
-              height={'150px'}
+              width={'100px'}
+              height={'100px'}
             ></img>
           </a>
-          <span>tel:{company.tel}</span>
-          <span></span>
+          <ul className='list-group justify-content-between'>
+            <li className='list-group-item'>tel:{company.tel}</li>
+          </ul>
         </div>
       ))}
     </section>

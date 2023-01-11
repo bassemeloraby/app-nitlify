@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
   return (
-    <aside className="border-end border-primary border-5">
+    <aside >
       <h4>Outside Links</h4>
       <a
         href="https://i-care.globemedsaudi.com:8036/Index.cfm"

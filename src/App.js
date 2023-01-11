@@ -10,11 +10,9 @@ function App() {
     <Fragment>
     <div className='container'>
     <Navbar/>
-    <section className="row">
-    <div className='col-3 '>
-    <Sidebar/>
-    </div>
-    <div className='col'>
+    <section >
+    
+    <div >
     <Main/>
     </div>
     </section>
