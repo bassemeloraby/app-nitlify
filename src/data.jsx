@@ -95,6 +95,14 @@ const companies = [
       tel: '05600254427',
       email:''
     },
+    {
+      id: 13,
+      name: 'Waseel',
+      logo: 'https://portal.waseel.com/nora/Common/images/logo_login.png?version=10/14/2020',
+      URL: 'https://portal.waseel.com/WaseelSwitch/Login.jsf',
+      tel: '05600254427',
+      email:''
+    },
   ];
 
   export default companies;
